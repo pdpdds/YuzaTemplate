@@ -32,5 +32,5 @@
 *.app
 
 Debug/
-v16/
+.vs/
 Intermediate/
