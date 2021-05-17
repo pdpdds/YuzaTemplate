@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+Debug/
+v16/
+Intermediate/
