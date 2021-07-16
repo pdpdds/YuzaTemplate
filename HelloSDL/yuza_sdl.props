@@ -9,12 +9,12 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
-      <AdditionalDependencies>streams.lib;systemcall.lib;sdl.lib;libcrt.lib;libwin32.lib;exestub.lib;math.lib;filemanager.lib</AdditionalDependencies>
+      <AdditionalDependencies>streams.lib;systemcall.lib;sdl.lib;SDLMixer.lib;SDL2_ttf.lib;SDLImage.lib;libcrt.lib;libwin32.lib;exestub.lib;math.lib;filemanager.lib</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <AdditionalLibraryDirectories>$(YUZA_ROOT)/$(Configuration);$(YUZA_ROOT)/corelib/$(Configuration);$(YUZA_ROOT)/runtime/$(Configuration);$(YUZA_ROOT)/ThirdParty/$(Configuration);$(YUZA_ROOT)/ThirdParty/SDL/SDL2/$(Configuration)</AdditionalLibraryDirectories>
     </Link>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(YUZA_ROOT)/corelib/include;$(YUZA_ROOT)/runtime/include;$(YUZA_ROOT)/ThirdParty/SDL/SDL2/SDL/include;$(YUZA_ROOT)/ThirdParty/SDL/SDL2/SDLimage</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(YUZA_ROOT)/corelib/include;$(YUZA_ROOT)/runtime/include;$(YUZA_ROOT)/ThirdParty/SDL/SDL2/SDL/include;$(YUZA_ROOT)/ThirdParty/SDL/SDL2/SDLimage;$(YUZA_ROOT)/ThirdParty/SDL/SDL2/SDLMixer;$(YUZA_ROOT)/ThirdParty/SDL/SDL2/SDLTTF</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_MSC_VER=1920;SKYOS32=100</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
